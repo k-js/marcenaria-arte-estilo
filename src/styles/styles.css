@@ -1,0 +1,271 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 90px;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    color: #f0e61a;
+}
+
+h1 span {
+    display: block;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: #f0e61a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+    background-color: #000000;
+}
+
+.hero-text {
+    max-width: 500px;
+    padding-right: 300px;
+}
+
+.hero-text h1 {
+    margin-bottom: 40px;
+}
+
+.hero-text p {
+    color: #fffdfd;
+    margin-bottom: 40px;
+}
+
+.hero-image img {
+    width: 400px;
+    max-width: 100%;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #f0e61a;
+    color: rgb(6, 6, 6);
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* Benefícios */
+.benefits {
+    text-align: center;
+    margin: 50px 0;
+    padding: 20px;
+}
+
+.benefits-subtitle {
+    font-size: 16px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.benefit-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    text-align: center;
+}
+
+.card-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 0 auto 15px;
+}
+
+.card:nth-child(1) .card-number {
+    background-color: #d9534f;
+}
+
+.card:nth-child(2) .card-number {
+    background-color: #f0ad4e;
+}
+
+.card:nth-child(3) .card-number {
+    background-color: #337ab7;
+}
+
+/* Footer */
+.footer {
+    background-color: #f0e61a;
+    color: #000000;
+    text-align: center;
+    padding: 0px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ========================== */
+/*        RESPONSIVIDADE       */
+/* ========================== */
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 40px;
+    }
+
+    .hero-text {
+        padding-right: 0;
+        max-width: 80%;
+    }
+
+    .hero-image img {
+        width: 350px;
+    }
+    .btn {
+        margin-bottom: 30px;
+    }
+}
+
+/* Celulares (até 768px) */
+@media (max-width: 768px) {
+    .home-container{
+        width: auto;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .hero-text {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        width: 300px;
+    }
+
+    .benefits-subtitle {
+        font-size: 14px;
+        max-width: 90%;
+    }
+    
+    .btn {
+        margin-bottom: 30px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .footer-container p {
+        margin: auto;
+    }
+}
+
+/* Smartphones menores (até 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .hero-image img {
+        width: 250px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+
+    .footer-container p {
+        text-align: left;
+    }
+}
