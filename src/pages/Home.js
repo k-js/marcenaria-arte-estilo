@@ -9,14 +9,14 @@ function Home() {
     <div className="home-container">
       <section className="hero">
         <div className="hero-text">
-          <h1>Marcenaria Arte&Estilo</h1>
+          <h1>Marcenaria Arte & Estilo</h1>
           <p>
             Aqui, somos apaixonados por madeira e comprometidos com a arte de criar móveis e peças 
             personalizadas que se encaixam perfeitamente na sua vida. Trabalhamos com dedicação, 
             unindo técnicas tradicionais e inovações modernas, para oferecer produtos únicos, 
             duráveis e cheios de personalidade.
           </p>
-          <button className="btn" onClick={() => navigate("/produtos")}>
+          <button className="btn" onClick={() => navigate("/servicos")}>
             Saiba mais
           </button>
         </div>
